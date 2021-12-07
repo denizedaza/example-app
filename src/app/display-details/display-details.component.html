@@ -1,0 +1,8 @@
+<button class="btn btn-primary" (click)="onUpdateButton()">Display Details</button>
+<p *ngIf="paragraphVisible">Secret password = tuna</p>
+<hr>
+<div
+  *ngFor="let click of buttonClicks"
+  [ngStyle]="{'background-color': click >= 5 ? 'blue' : 'transparent'}"
+  [ngClass]="{five: click >= 5}"
+>{{ click }}</div>
